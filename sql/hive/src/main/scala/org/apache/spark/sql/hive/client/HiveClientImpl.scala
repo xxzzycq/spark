@@ -469,6 +469,7 @@ private[hive] class HiveClientImpl(
     shim.createPartitions(client, db, table, parts, ignoreIfExists)
   }
 
+  // 删除分区
   override def dropPartitions(
       db: String,
       table: String,
